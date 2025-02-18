@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare GlowUp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+        }
+        .product-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial {
+            font-style: italic;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        footer {
+            background: #333;
+        }
+    </style>
+</head>
+<body class="bg-pink-100">
+    <!-- Header -->
+    <header class="text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Cantik Alami dengan Skincare GlowUp</h1>
+        <p class="text-lg">Produk berkualitas untuk kulit sehat dan bercahaya</p>
+    </header>
+
+    <!-- Produk -->
+    <section class="max-w-6xl mx-auto py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center product-card">
+                <center><img src="gomilku.jpeg" class="d-block w-100" alt="Snack 1"></center>
+                <h2 class="text-2xl font-bold mb-3">Susu Gomilk</h2>
+                <p class="text-gray-700">Produk berbahan alami untuk semua jenis kulit.</p>
+                <p class="text-lg font-bold text-pink-600">Rp 150.000</p>
+                <a href="#" class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700">Lihat Produk</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center product-card">
+                <center><img src="toner.jpeg" class="d-block w-100" alt="Snack 2"></center>
+                <h2 class="text-2xl font-bold mb-3">Toner Wajah</h2>
+                <p class="text-gray-700">Solusi perawatan wajah untuk kulit cerah.</p>
+                <p class="text-lg font-bold text-pink-600">Rp 180.000</p>
+                <a href="#" class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700">Lihat Produk</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center product-card">
+                <center><img src="sunscreen.jpeg" class="d-block w-100" alt="Snack 1"></center>
+                <h2 class="text-2xl font-bold mb-3">Sunscreen</h2>
+                <p class="text-gray-700">Teknologi terbaru untuk kulit sehat dan glowing.</p>
+                <p class="text-lg font-bold text-pink-600">Rp 200.000</p>
+                <a href="#" class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700">Lihat Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="bg-pink-200 py-12 text-center">
+        <h2 class="text-3xl font-bold mb-6">Apa Kata Mereka?</h2>
+        <div class="max-w-4xl mx-auto testimonial">
+            <p class="text-gray-700">"Produk GlowUp benar-benar mengubah kulit saya! Lebih cerah dan sehat!"</p>
+            <p class="mt-2 font-bold">- Anna, 25</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-white">
+        <p>&copy; 2025 Skincare GlowUp. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+</body>
+</html>
